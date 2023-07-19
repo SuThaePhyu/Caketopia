@@ -1,0 +1,800 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Zilla+Slab:wght@300;600&display=swap');
+
+:root {
+    --black: #181722;
+    --white: #f0f0f0;
+    --box-shadow: 0px 4px 4x rgb(0, 0, 0, 0.25);
+
+}
+
+* {
+    font-family: 'Josefin Sans', sans-serif, 'Zilla Slab', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+
+html {
+    font-size: 62.5%;
+    /* overflow: hidden; */
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 5rem;
+
+}
+
+.header {
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(206, 139, 91);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 50px;
+}
+
+.header .logo .logoimg img {
+    height: 10rem;
+
+}
+
+.header .logo .logoimg .logoName {
+    color: #181722;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: black;
+    font-weight: bold;
+}
+
+.header .navbar a:hover {
+    /* border-bottom: .1rem solid black; */
+    padding-bottom: .4rem;
+
+}
+
+.header .icon i {
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.header .search {
+    display: none;
+    top: 100%;
+    margin: 1.5rem 7%;
+    background-color: transparent;
+    width: 50%;
+    height: 5rem;
+    position: absolute;
+}
+
+.header .search input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background-color: rgb(238, 237, 237);
+    color: black;
+    margin-right: 7%;
+    padding: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.header .search.active {
+    display: inline-block;
+
+}
+
+#menu-bar {
+    display: none;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(image/aesthetic-abstract-modern-brown-background-illustration-perfect-for-wallpaper-backdrop-postcard-background-banner-vector.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.home .homeContent {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 4rem;
+}
+
+.home .homeContent h2 {
+    font-size: 7rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    line-height: 7rem;
+    color: black;
+    text-shadow: var(--box-shadow);
+}
+
+.home .homeContent p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.home .homeContent .home-btn {
+    height: 3rem;
+}
+
+.home .homeContent .home-btn button {
+    font-size: 1.8rem;
+    background-color: rgb(144, 98, 57);
+    color: white;
+    border-radius: .7rem;
+    padding: .7rem 2.4rem;
+    cursor: pointer;
+}
+
+.home .homeContent .home-btn button:hover {
+    font-size: 2rem;
+
+}
+
+.home .overimg {
+    flex: 1 1 400px;
+}
+
+.home .overimg img {
+    width: 90%;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: black;
+    text-transform: uppercase;
+    padding: 1.2rem;
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: rgb(144, 98, 57);
+
+}
+
+/* about */
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .row .abtimg {
+    flex: 1 1 40rem;
+}
+
+.about .row .abtimg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+
+}
+
+.about .row .content {
+    flex: 1 1 50rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    color: var(--black);
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+.about .row .content h3 span {
+    color: rgb(144, 98, 57);
+}
+
+.about .row .content p {
+    color: black;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.about .content .about-btn {
+    margin-top: 1.5rem;
+    height: 3rem;
+}
+
+.about .content .about-btn button {
+    font-size: 1.8rem;
+    background-color: rgb(144, 98, 57);
+    color: white;
+    border-radius: .7rem;
+    padding: .7rem 2.4rem;
+    cursor: pointer;
+}
+
+.about .content .about-btn button:hover {
+    font-size: 2rem;
+
+}
+
+/* about end */
+
+
+/* product */
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+    color: black;
+    text-transform: uppercase;
+    padding: 1.2rem;
+    font-weight: bolder;
+
+}
+
+.heading span {
+    text-transform: uppercase;
+    color: rgb(144, 98, 57);
+
+}
+
+.heading2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: rgb(109, 71, 38);
+    text-transform: uppercase;
+    padding: 1.2rem;
+    font-weight: bolder;
+    border-bottom: 2px solid rgb(144, 98, 57);
+
+}
+
+.product .row {
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+
+#product-cards h1 {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+    color: black;
+    text-shadow: 1px 1px 1px black;
+}
+
+.product .row .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 40%; */
+    background-color: #e8ca98;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: 3rem;
+    margin-right: 3rem;
+    /* width: 45rem; */
+}
+
+.product .row img {
+    height: 50%;
+    width: 50%;
+    border-radius: 3rem;
+
+}
+
+.product .row img:hover {
+    transform: scale(1.05);
+}
+
+.product .row .orderNow {
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.product .row .card-body {
+    margin-bottom: 4rem;
+}
+
+.product .row .card-body h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+
+.product .row .card-body p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: black;
+    padding-top: 1.5rem;
+}
+
+.product .row .card-body .orderNow button {
+    font-size: 1.8rem;
+    background-color: rgb(144, 98, 57);
+    color: white;
+    border-radius: .7rem;
+    padding: .7rem 1.5rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.product .row .card-body .orderNow button:hover {
+    font-size: 2rem;
+}
+
+/* product end */
+
+
+/* review start  */
+.review {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review .box {
+    padding: 2rem;
+    border: 0.1rem solid black;
+    background-color: rgb(174, 119, 71);
+    box-shadow: 3px 3px 3px 3px #888888;
+}
+
+.review .box .user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.review .box .user img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.review .box .user h3 {
+    color: black;
+    font-size: 2.2rem;
+}
+
+.review .box .user span {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.review .box p {
+    font-size: 1.4rem;
+    color: black;
+    line-height: 2;
+}
+
+/* review end  */
+
+/* order form  */
+.order {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+
+}
+
+.order .order-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.order .order-main .order-img img {
+    width: 600px;
+}
+
+.order .order-main form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.order .order-main form .input p {
+    line-height: 25px;
+    font-size: 1.5rem;
+}
+
+.order .order-main form .input {
+    margin: 5px;
+}
+
+.order .order-main form .input .cake {
+    width: 100%;
+    height: 35px;
+    border: 2px solid rgb(109, 71, 38);
+    outline: none;
+    background: rgb(228, 224, 189);
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+
+.order .order-main form .input .cake option {
+    line-height: 25px;
+    font-size: 1.5rem;
+}
+
+.order .order-main form .input input {
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid rgb(109, 71, 38);
+    outline: none;
+    background: rgb(228, 224, 189);
+    border-radius: 3px;
+    font-size: 1.5rem;
+}
+
+.order .order-main form .input input:focus {
+    border: 2px solid rgb(115, 50, 50);
+}
+
+.order .order-main form .order-now {
+    padding: 10px 0;
+    background-color: rgb(109, 71, 38);
+    color: white;
+    width: 40%;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.order .order-main form .order-now:hover {
+    font-size: 1.8rem;
+}
+
+
+/* order form end  */
+
+/* contact  */
+.contact .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 0 10px rgb(75, 70, 70);
+    border: .3rem solid rgb(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: .5rem;
+
+}
+
+.contact .row form h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    color: rgb(144, 98, 57);
+}
+
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+
+}
+
+.contact .row form .box {
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    color: #181722;
+    text-transform: none;
+    border: .1rem solid rgb(115, 50, 50);
+    border-radius: .5rem;
+    margin: .7rem 0;
+    width: 100%;
+
+
+}
+
+.contact .row form .box:focus {
+    border-color: rgb(144, 98, 57);
+
+}
+
+.contact .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row form .btn {
+    font-size: 1.5rem;
+    background-color: rgb(144, 98, 57);
+    color: white;
+    border-radius: .7rem;
+    padding: .7rem 1.5rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.contact .row form .btn:hover {
+    font-size: 1.8rem;
+}
+
+
+
+/* contact end  */
+
+/* footer  */
+
+.footer {
+    background-color: rgb(174, 119, 71);
+    padding: 70px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 2rem;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    position: relative;
+    font-weight: 500;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(109, 71, 38);
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    display: block;
+}
+
+.footer-col ul li a:hover {
+    color: rgb(115, 50, 50);
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    /* align-items: center; */
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(115, 50, 50);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 50px;
+    color: white;
+    /* transition: all 0.5s ease; */
+}
+
+.footer-col .social-links a:hover {
+    color: rgb(144, 98, 57);
+    background-color: white;
+}
+
+/* footer end  */
+
+
+
+
+/* media queries for web resposive */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.3rem 3rem;
+    }
+
+    .home .homeContent {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .home .overimg img {
+        width: 90%;
+    }
+
+    .card-container {
+        grid-template-columns: 100%;
+    }
+
+    .card-img {
+        height: 330px;
+    }
+
+    .order .order-main .order-img img {
+        height: 300px;
+        width: 300px;
+
+    }
+
+}
+
+@media (max-width:768px) {
+    #menu-bar {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 25rem;
+        background-color: white;
+        color: black;
+        height: 80vh;
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5rem;
+    }
+
+    .home .homeContent {
+        margin-left: 0;
+        width: 90%;
+    }
+
+    .home .overimg img {
+        width: 90%;
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .order .order-main .order-img img {
+        display: none;
+
+
+
+    }
+
+    .order {
+        /* width: 30px; */
+        margin-bottom: 50px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .order .order-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .order .order-main form {
+        display: table-column;
+        /* margin-left: 10px; */
+        /* margin-bottom: 100px; */
+        column-gap: 30px;
+        align-items: center;
+
+    }
+
+    .order .order-main form .input {
+        margin: 15px;
+    }
+
+    .order .order-main form .order-now {
+        padding: 10px 0;
+        margin-left: 20px;
+        text-align: center;
+        /* margin-top: 100%; */
+
+    }
+
+}
+
+@media (max-width:600px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home .overimg img {
+        width: 90%;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+}
